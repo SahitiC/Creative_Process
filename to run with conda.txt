@@ -1,0 +1,10 @@
+to run with conda:
+
+create conda env: conda create -n creative_process
+
+add conda-forge channel:
+conda config --add channels conda-forge
+conda config --set channel-priority strict
+
+install from requirments.txt file
+conda install --yes --file requirements.txt
