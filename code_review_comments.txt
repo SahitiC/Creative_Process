@@ -1,0 +1,24 @@
+problems with running and reproducing analyses:
+
+1. Geneva font not available
+2. k-mean clusters order don't match headings
+3. percentages of participant and LLM assignments to clusters don't match those in paper Fig 3
+4. elbow plots for k-means clusters of jump profiles missing 
+5. cluster assignment ~ temp coeff missing for VFT in regression result
+
+correctness:
+
+i only skimmed some important functions and as far as i understood them, they look good  
+
+
+readability and understandability:
+
+1. say AUT brick or paperclip or VFT animals intead of tasks 1, 2, 3
+2. y-axis label missing for validity: AUT vs VF jumping plots
+
+
+analysis
+
+1. why were LLM jump profiles not clustered themselves, instead of assigning to human clusters?
+2. why not iterate k-means algorithm multiple times? (n_init parameter in scipy function)
+3. how were cut-offs for semantic sim set (like 0.7 for distance threshold or 0.8 for jumps?)
